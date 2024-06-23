@@ -1,0 +1,18 @@
+name: kinki
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pandas
+  - jupyterlab
+  - matplotlib
+  - seaborn
+  - ipywidgets
+  - pip:
+    - openpyxl
+    - xlrd
+    - tqdm
+    - pydot
+    - umap-learn
+    - scikit-learn
