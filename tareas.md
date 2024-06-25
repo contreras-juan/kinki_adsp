@@ -1,0 +1,55 @@
+Tareas:
+
+- Revisar imputación de variables categóricas.
+
+1. *Frequent Category Imputation*:
+   - Impute missing values with the most frequent category in the variable.
+
+2. *Random Imputation*:
+   - Impute missing values with a random value selected from the available categories.
+
+3. *K-Nearest Neighbors (KNN) Imputation*:
+   - Use the KNN algorithm to find the k closest instances (based on other variables) and impute the missing value with the most frequent category among the neighbors.
+
+4. *Conditional Imputation*:
+   - Impute missing values based on other relevant variables. For example, if you have information that a specific category is more likely given another variable, use that conditional probability to impute the missing values.
+
+5. *Using Predictive Models*:
+   - Build a predictive model (e.g., logistic regression, decision tree) to predict the missing values based on other variables in the dataset.
+
+6. *Hot Deck Imputation*:
+   - Replace missing values with values from a similar record (or "deck"). Similarity can be determined by other variables in the dataset.
+
+7. *Multiple Imputation*:
+   - Generate several imputed datasets, analyze each one, and combine the results. This accounts for the uncertainty in the imputations.
+
+8. *Backward and Forward Filling (mostly for time series data)*:
+   - Impute missing values using the previous or next observation in the dataset. This is particularly useful for time-ordered data.
+
+9. *Target-Based Imputation*:
+   - If you have a target variable, you can impute missing values based on the relationship with the target. For example, impute based on the average target value within each category.
+
+10. *Encoding-Based Methods*:
+   - Convert the categorical variable to numeric using encoding techniques like one-hot encoding, and then apply numeric imputation methods. After imputation, you can convert the variable back to its categorical form.
+
+- ¿Cuáles son las variables que se pueden ignorar?
+- Investigar sobre correlaciones multi lineales. ¿Cálculo de Entropía?
+- Investigar otros tipos de estimadores
+- Dejar la matriz final de features para el modelo
+
+
+**Preprocesamiento**
+
+- Imputting missing data with KNN
+- MCA for managing categorial variables
+
+**Modelos:**
+
+- Logistic Regression
+- Random Forest
+- SVM
+- Gradient Boosting
+- XgBoost
+- AdaBoost
+- Perceptron
+- BERT
